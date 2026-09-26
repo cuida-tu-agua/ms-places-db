@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: tcl-tag-001-baseline
+      author: esteban
+      comment: Baseline tag of the places domain (catalogs CO/EC + places + FKs + indexes + seeds + grants)
+      changes:
+        - tagDatabase:
+            tag: v1.0-baseline
