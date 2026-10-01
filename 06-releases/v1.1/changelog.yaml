@@ -1,0 +1,23 @@
+databaseChangeLog:
+# Release v1.1 — what HU-010/HU-011 need on top of the v1.0-baseline tag.
+# Order: table → FK → indexes → permissions → tag.
+  - includeAll:
+      path: 01-ddl/03-tables/
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
+  - includeAll:
+      path: 01-ddl/04-alter/
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
+  - includeAll:
+      path: 01-ddl/09-indexes/
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
+  - includeAll:
+      path: 03-dcl/01-grants/
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
+  - includeAll:
+      path: 04-tcl/02-release-tags/
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
