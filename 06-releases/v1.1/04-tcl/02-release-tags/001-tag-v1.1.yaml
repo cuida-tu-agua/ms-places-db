@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: v1.1-tcl-tag-001-places-e2
+      author: esteban
+      comment: Release v1.1 of the places domain (activity_log for HU-011)
+      changes:
+        - tagDatabase:
+            tag: v1.1-places-e2
