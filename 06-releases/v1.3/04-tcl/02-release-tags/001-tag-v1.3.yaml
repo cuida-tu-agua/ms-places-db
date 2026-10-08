@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: v1.3-tcl-tag-001-places-tips
+      author: diego
+      comment: Release v1.3 of the places domain (water saving tips and favorites, HU-063/064/065)
+      changes:
+        - tagDatabase:
+            tag: v1.3-places-tips
