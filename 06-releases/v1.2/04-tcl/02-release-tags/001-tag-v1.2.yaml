@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: v1.2-tcl-tag-001-places-tariffs
+      author: diego
+      comment: Release v1.2 of the places domain (tariff catalog and tariff history, HU-054/066/069)
+      changes:
+        - tagDatabase:
+            tag: v1.2-places-tariffs
