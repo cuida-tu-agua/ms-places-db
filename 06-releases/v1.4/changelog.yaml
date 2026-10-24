@@ -1,0 +1,24 @@
+databaseChangeLog:
+# Release v1.4 — guest links, collaborators and invitations (HU-039 to HU-046). Runs AFTER the v1.3 tag.
+# Order: tables → FK → indexes → tag. (places_rw already has SELECT/INSERT/UPDATE on the schema and never DELETE,
+# which is what these tables need: nothing is physically deleted, rows change state.)
+
+  - includeAll:
+      path: 01-ddl/03-tables/
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
+
+  - includeAll:
+      path: 01-ddl/04-alter/
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
+
+  - includeAll:
+      path: 01-ddl/09-indexes/
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
+
+  - includeAll:
+      path: 04-tcl/02-release-tags/
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
