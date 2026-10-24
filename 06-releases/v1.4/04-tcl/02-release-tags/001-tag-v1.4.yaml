@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: v1.4-tcl-tag-001-places-sharing
+      author: juan
+      comment: Release v1.4 of the places domain (guest links, collaborators and invitations, HU-039 to HU-046)
+      changes:
+        - tagDatabase:
+            tag: v1.4-places-sharing
